@@ -33,7 +33,7 @@ def text_to_speech():
     if not text or not voice:
         return jsonify({'error': 'Text and voice parameters are required'}), 400
 
-    api_key = '6839c6fafb2b43fca0259b0cb84f38aa'
+    api_key = 'your api'
     api_url = f'https://api.voicerss.org/?key={api_key}&hl={voice}&src={text}&c=MP3'
 
     response = requests.get(api_url, stream=True)
