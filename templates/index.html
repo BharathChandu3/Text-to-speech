@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text/Image to Speech with Download</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/styles.css') }}">
+    <script src="{{ url_for('static', filename='./js/script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Text/Image to Speech with Download</h1>
+
+        <!-- Text input area -->
+        <textarea id="text-input" placeholder="Enter text here..."></textarea>
+
+        <!-- Image upload area -->
+        <div class="file-upload-wrapper">
+            <label for="image-input" class="file-upload-label">Choose File</label>
+            <input type="file" id="image-input" accept="image/*">
+        </div>
+
+        <!-- Voice selection with updated look -->
+        <div class="voice-selection">
+            <label for="voice-select">Choose a voice:</label>
+            <div class="custom-select">
+                <select id="voice-select">
+                    <option value="en-us">English (US)</option>
+                    <option value="en-gb">English (UK)</option>
+                    <option value="en-in">English (India)</option>
+                    <option value="fr-fr">French</option>
+                    <option value="es-es">Spanish</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Controls for speech and download -->
+        <div class="controls">
+            <button id="speak-btn" class="btn">Speak</button>
+            <button id="download-btn" class="btn">Download Speech</button>
+        </div>
+    </div>
+</body>
+</html>

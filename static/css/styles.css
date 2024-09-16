@@ -1,0 +1,104 @@
+/* Add a background gradient animation */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5, #35d7d1);
+    background-size: 300% 300%;
+    animation: backgroundAnimation 10s ease infinite;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Style the container */
+.container {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 450px;
+}
+
+/* Textarea styling */
+textarea {
+    width: 90%;
+    height: 100px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* File upload styling */
+.file-upload-wrapper {
+    margin-bottom: 15px;
+}
+
+.file-upload-label {
+    display: inline-block;
+    background-color: #ff6ec4;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.file-upload-label:hover {
+    background-color: #ff4c8a;
+}
+
+#image-input {
+    display: none;
+}
+
+/* Voice selection styling */
+.voice-selection {
+    margin-bottom: 15px;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Button styling */
+.btn {
+    background-color: #ff6ec4;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff4c8a;
+}
